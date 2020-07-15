@@ -54,3 +54,9 @@ Posts.getInitialProps = async ({req}) => {
     const posts = await response.json();
     return { posts };
 }
+
+// export async function getServerSideProps(context) {
+//     const response = await fetch('http://localhost:4200/posts');
+//     const posts = await response.json();
+//     return { props: { post } };
+// }
