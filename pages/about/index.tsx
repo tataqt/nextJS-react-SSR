@@ -2,7 +2,11 @@ import React from 'react';
 import Router from 'next/router'
 import { MainLayout } from '../../components/MainLayout';
 
-export default function About({title}) {
+interface AboutProps{
+    title: string
+}
+
+export default function About({title}: AboutProps) {
     return (
         <MainLayout title={"About page"}>
             <h1>{title}</h1>
